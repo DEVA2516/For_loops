@@ -1,4 +1,4 @@
-number = 20;
+number = prompt();
 
 if(number >= 2){
     let flag = 1;
@@ -8,7 +8,7 @@ if(number >= 2){
             console.log(number + " is not prime");
             break;
         }
-            
+         flag = 1;   
     }
 
     if(flag == 1) {
