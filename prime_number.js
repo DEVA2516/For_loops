@@ -1,4 +1,4 @@
-number = 23;
+number = 20;
 
 if(number >= 2){
     let flag = 1;
@@ -7,8 +7,8 @@ if(number >= 2){
             flag = 0;
             console.log(number + " is not prime");
             break;
-        }else
-            flag = 1;
+        }
+            
     }
 
     if(flag == 1) {
