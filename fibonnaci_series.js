@@ -1,0 +1,27 @@
+let num1 = 0;
+let num2 = 1;
+let num3 = prompt("",5);
+let str = '';
+
+if(num3>0 && !isempty(num3)){
+    
+    str = num1 +" "+num2;
+
+    for(let i = 2;i<num3;i++){
+
+        let sum = num1 + num2;
+        str += " "+ sum;
+
+        num1 = num2;
+        num2 = sum;
+        }
+
+    console.log(str);
+}
+else
+    console.log("Invalid number......Try number greater than zero........");
+
+    
+function isempty(value){
+    return (value == null||value === undefined||value=='')?true:false;
+}
