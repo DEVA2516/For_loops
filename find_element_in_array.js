@@ -1,6 +1,8 @@
 const array = [23,13,10,78,12,15,20];
 let b = prompt();
+
 let Flag = 0;
+
 if((b>=0)&&(!isempty(b))) {
     for (let i=0;i<array.length;i++){
         if(array[i]==b){

@@ -1,5 +1,6 @@
-let min = prompt("min = ",);
-let max = prompt("max = ",);
+let min = prompt("min = ",1);
+let max = prompt("max = ",500);
+
 if((min>0)&&(min<max)&&(!isempty(min))&&(!isempty(max))){
     for(let num=min;num<=max;num++){
         let sum = 0;

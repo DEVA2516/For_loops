@@ -1,4 +1,5 @@
 let num = prompt();
+
 if(num>0 && !isempty(num)){
     let fact = 1;
     for(let i =1;i<=num;i++)
