@@ -1,4 +1,4 @@
-let num = 5;
+let num = prompt("",5);
 
 if(num>0 && !isempty(num)){
     for(let i=1;i<=num;i++){
