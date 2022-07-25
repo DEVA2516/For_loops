@@ -19,5 +19,5 @@ else
     console.log("String is empty...........");
 
 function isempty(value){
-    return (value =='')?true:false;
+    return (value ==''||value.length<=0)?true:false;
 }
