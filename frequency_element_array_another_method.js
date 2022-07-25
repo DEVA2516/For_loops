@@ -18,7 +18,7 @@ function found(){
     let found = false;
     for(let l=0;l<temp.length;l++){
         if(temp[l]==str[i]){
-            //consol
+            //
             found = true;
             break;
         }

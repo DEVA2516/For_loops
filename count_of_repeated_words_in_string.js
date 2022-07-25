@@ -1,7 +1,7 @@
 let str = "woondeer whoooo iiiis thiiiiiisssssw";
 let count = 1,k = 0;
 let temp = [];
-for(i=0;i<str.length;i++){
+for(let i=0;i<str.length;i++){
     if((str[i]==str[i-1]))
         count++;
     if(count == 1)

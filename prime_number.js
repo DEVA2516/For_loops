@@ -1,4 +1,4 @@
-number = prompt();
+let number = prompt();
 
 if(number >= 2 && (!isempty(number))){
     let flag = 1;
