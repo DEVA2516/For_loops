@@ -1,9 +1,11 @@
+is =require("./isem.js");
+
 let num1 = 0;
 let num2 = 1;
-let num3 = prompt("",5);
+let num3 = prompt("",10);
 let str = '';
 
-if(num3>0 && !isempty(num3)){
+if(num3>0 && !is.isempty(num3)){
     
     str = num1 +" "+num2;
 
@@ -21,7 +23,3 @@ if(num3>0 && !isempty(num3)){
 else
     console.log("Invalid number......Try number greater than zero........");
 
-    
-function isempty(value){
-    return (value == null||value === undefined||value=='')?true:false;
-}
