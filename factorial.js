@@ -7,7 +7,7 @@ if(num>0 && !isempty(num)){
     console.log(fact);
 }
 else
-    console.log("Invalid number.......try number greater than zero...");
+    alert("Invalid number.......try number greater than zero...");
 
     function isempty(value){
         return (value==''||value==null||value===undefined)?true:false;

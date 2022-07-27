@@ -14,4 +14,4 @@ if(count == array.length)
     console.log("All elements are same....");
 }
 else 
-    console.log("invalid element..........Try valid element >=0!!!!!!!!!!!!!!!!!!!");s
+    console.log("invalid element..........Try valid element >=0!!!!!!!!!!!!!!!!!!!");

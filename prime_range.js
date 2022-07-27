@@ -24,7 +24,7 @@ if((min>0)&&(min<max)&&(!isempty(min))&&(!isempty(max))){
     console.log(count);
 }
 else
-    console.log("Invlid range........check.....min.....max");
+    alert("Invlid range........check.....min.....max");
 
 function isempty(value){
     return (value == null||value === undefined||value=='')?true:false;

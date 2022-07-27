@@ -18,7 +18,7 @@ if((b>=0)&&(!isempty(b))) {
     
 }
 else 
-    console.log("Invalid number......Try number b>=0");
+    alert("Invalid number......Try number b>=0");
 
 
 function isempty(value) {

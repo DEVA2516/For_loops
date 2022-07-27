@@ -1,4 +1,4 @@
-let number = prompt();
+let number = prompt("prime",23);
 
 if(number >= 2 && (!isempty(number))){
     let flag = 1;
@@ -15,13 +15,13 @@ if(number >= 2 && (!isempty(number))){
         console.log(number+" is prime");
     }
 }
-else if ((number==0||number == 1) && (!isempty(number))){
-    console.log(number + " is not prime.......");
+else if ((number==0||number == 1) && (!isempty(number)))
+    alert(number + " is not prime.......");
 
-}
-else {
-    console.log("Invlid number......try valid number>0");
-}
+
+else 
+    alert("Invlid number......try valid number>0");
+
 
 function isempty(value){
     return (value === undefined||value == null||value == ''||value==' ')?true:false;
