@@ -1,4 +1,4 @@
-const a =[10,20,30,40];
+const a =[10,20,30,40,50];
 if(!isempty(a)){
     for(let i=a.length-1,j=0;j<i;i--,j++){
         let temp = a[j];
