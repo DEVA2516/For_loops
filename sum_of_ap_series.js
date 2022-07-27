@@ -1,6 +1,6 @@
 is = require("./isem.js");
 
-let s_num = 1;
+let s_num = 2;
 let n_times =8;
 let diff = 5;
 let sum =0,sumseries =s_num;

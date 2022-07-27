@@ -1,0 +1,10 @@
+let num1=2;
+let num2=19;
+let max=0;
+max =(num1>num2)?num1:num2;
+for(i=max;i<1000;i++){
+    if((i%num1==0)&&(i%num2==0)){
+        console.log(i);
+        break;
+    }
+}
