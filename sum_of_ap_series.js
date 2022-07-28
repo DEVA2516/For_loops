@@ -1,7 +1,7 @@
 is = require("./isem.js");
 
 let s_num = parseInt(prompt("",2));
-let n_times =parseInt(prompt("",8));
+let n_times = parseInt(prompt("",8));
 let diff = ParseInt(prompt("",5));
 
 let sum =0,sumseries = 0;

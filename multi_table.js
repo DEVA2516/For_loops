@@ -4,7 +4,7 @@ let mul = prompt("",5);
 let num = prompt('',10);
 let str = '';
 
-if(num>0 && mul>0 && !is.isempty(mul) && !is.isempty(num)){
+if(!is.isempty(mul) && !is.isempty(num)){
     for(let i = 1;i<=num;i++){
         str = '';
         for(let j = 1;j<=mul;j++){
