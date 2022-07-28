@@ -1,3 +1,5 @@
+// length of the string without using built-in function
+
 let str = prompt("",);
 let count = 0;
 
