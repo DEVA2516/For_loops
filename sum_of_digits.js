@@ -6,6 +6,7 @@ if(num>0&&(!isempty(num))){
         let rem = i % 10
         sum = sum + rem; 
         num /=10;
+        //console.log(sum);
     }
     console.log("sum = "+sum);
 }
