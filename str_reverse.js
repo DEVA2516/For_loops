@@ -11,3 +11,4 @@ for(let i = str.length-1,j=0;j<i;i--,j++){
 
 console.log(str);
 
+
