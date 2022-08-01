@@ -22,5 +22,5 @@ else
 
 
 function isempty(value) {
-    return (value==null||value == ' '||value.length <= 0||value === undefined)?true:false;
+    return (value==null||value == ' '||value.length <= 0||value === undefined )?true:false;
 }

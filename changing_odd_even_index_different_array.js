@@ -1,4 +1,4 @@
-import {is} from './isempty.js'; 
+let is = require("./isem.js"); 
 
 const odd_array = [1,8,9,20,10];
 const even_array = [2,7,12,17,22];

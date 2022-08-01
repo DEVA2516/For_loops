@@ -1,6 +1,6 @@
 //find the all the elements in the array same or not
 
-is = require("./isem.js");
+let is = require("./isem.js");
 
 const array = [1,1,1,1];
 

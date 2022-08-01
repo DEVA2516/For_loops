@@ -5,7 +5,7 @@ let num2 = 1;
 let num3 = prompt("",10);
 let str = '';
 
-if(num3>0 && !is.isempty(num3)){
+if(!is.isempty(num3)){
     
     str = num1 +" "+num2;
 

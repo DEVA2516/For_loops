@@ -1,4 +1,4 @@
-is = require("./isem.js");
+let is = require("./isem.js");
 let num = 5;
 
 if (!is.isempty(num)){

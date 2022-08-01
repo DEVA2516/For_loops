@@ -1,4 +1,4 @@
-is = require("./isem.js");
+let is = require("./isem.js");
 
 let arr_size = prompt();
 let a =[];

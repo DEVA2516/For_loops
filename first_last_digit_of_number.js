@@ -1,17 +1,26 @@
-let num = 12345;
-let sum = 0;
+//let is = require("./isem.js");
 
-sum = firstDigit(num)+lastDigit(num);
+// //let num = 12345;
 
-console.log("sum of first_last = "+sum);
+// if (!is.isempty(num)) {
+//     console.log("first digit = "+firstDigit(num));
+//     console.log("last digit = "+lastDigit(num));
+// }
+// else
+//     console.log("Invalid number......check number greater than zero....")
 
-function firstDigit(num){
+ function firstDigit(num){
     for(i=num;i>=10;i=parseInt(num))
         num = num/10;
     return i;
 }
 
 
-function lastDigit(num) {
+ function lastDigit(num) {
     return num % 10;
+}
+
+module.exports = {
+    firstDigit,
+    lastDigit
 }
