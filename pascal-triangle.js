@@ -1,11 +1,20 @@
 let num = 7;
-let sum = 0;
+let sum = 1;
 let str = '';
-for(let i=1;i<=7;i++){
-    for(let j=1;j<=i;j++){
-        sum += j;
-        str += sum + " ";
+
+for(let i=0;i<=7;i++){
+    
+    for(let j=0;j<=i;j++){
+
+        if(i==0||j==0)
+
+             sum = 1;
+             //console.log(str);
+        else
+            sum *= parseInt((i-j+1)/j);
+
+        str += sum + " ";    
     }
-    sum = 0;
     console.log(str);
+    str ='';
 }
