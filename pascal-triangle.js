@@ -1,20 +1,18 @@
-let num = 7;
-let sum = 1;
-let str = '';
+ let num = 7;
+// let sum = 1;
+// let str = '';
+// let array = [0,1,1,0];
+// let k = 0;
+let temp = [1,1];
 
-for(let i=0;i<=7;i++){
-    
-    for(let j=0;j<=i;j++){
-
-        if(i==0||j==0)
-
-             sum = 1;
-             //console.log(str);
-        else
-            sum *= parseInt((i-j+1)/j);
-
-        str += sum + " ";    
+for(let i=2;i<=num;i++){
+    let j=0;
+    let t=[];
+    t[j++]=1;
+    for(let i=1;i<temp.length;i++){
+        t[j++] = temp[i-1] + temp[i]; 
     }
-    console.log(str);
-    str ='';
+    t[j++] = 1;
+    console.log(t);
+    temp = t;
 }
