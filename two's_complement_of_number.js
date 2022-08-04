@@ -1,4 +1,4 @@
-let num = "10111";
+let num = "0011";
 let c = [];
 let carry = 1,two = [];
 let k = 0;
@@ -6,11 +6,13 @@ let k = 0;
  c = onesComplement(num);
  console.log(c);
 
-for(let i=0;i<c.length;i++){
+for(let i=c.length-1;i>=0;i--){
     //console.log(c[i]);
 
-    if (c[i] == 1 && carry == 1)
+    if (c[i] == 1 && carry == 1){
         two[i] = 0;
+        carry = 1;
+    }
     else if(c[i]==0 && carry == 1){
         two[i] = 1;
         carry = 0;

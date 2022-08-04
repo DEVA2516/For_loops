@@ -8,7 +8,8 @@ for(let i = str.length-1,j=0;j<i;i--,j++){
     str[i] = temp;
     //console.log(str);
 }
-
-console.log(str);
+str = str.toString();
+let str1 = str.replace(/,/g,"");
+console.log(str1);
 
 
