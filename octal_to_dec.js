@@ -1,4 +1,4 @@
-let oct = 10 ;
+let oct = 100 ;
 let dec = 0;
 let j = 0;
 
