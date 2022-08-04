@@ -1,7 +1,6 @@
 let hex = "D0";
 hex = hex.split("");
 
-//console.log(hex);
 for (let i=0;i<hex.length;i++){
     if (hex[i] == 'A')
         hex[i] = '10';
@@ -18,27 +17,24 @@ for (let i=0;i<hex.length;i++){
     else
         continue;
 }
-console.log(hex);
+//console.log(hex);
 
 let j = 0;
-let sum = 0;
+let dec = 0;
 for (let i =hex.length-1;i>=0;i--){
-    sum += hex[i] * Math.pow(16,j++);
+    dec += hex[i] * Math.pow(16,j++);
     //console.log(hex[i]);
 }
-console.log(sum);
+//console.log(dec);
 
+let oct = 0;
+j = 1;
 
+for(let i = dec; i > 0; i = parseInt(dec)){
+    let rem = i % 8;
+    oct += rem * j;
+    j *= 10
+    dec /= 8;
+}
 
-//hex = parseInt(hex.toString().replace(/,/g,""));
-
-// let dec = 0;
-// let j = 0;
-// for (let i = hex ;i > 0;i = parseInt(hex)) {
-//     let rem = i % 10;
-//     dec += rem * Math.pow(16,j++);
-//     hex /= 10;
-
-// }
-
-// console.log(dec);
+console.log(oct);
