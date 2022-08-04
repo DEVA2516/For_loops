@@ -1,14 +1,14 @@
-num = 8345;
+num = 1000;
 let str = '';
 
 for(let i=num;i>0;i=parseInt(num)){
     rem = i % 10;
     if(rem == 1)
-        str += "one" + " ";
+        str += "One" + " ";
     else if (rem == 2)
-        str += "two" + " ";
+        str += "Two" + " ";
     else if(rem == 3)
-        str += "three"+ " ";
+        str += "Three"+ " ";
     else if(rem == 4)
         str += "Four" + " ";
     else if(rem == 5)
@@ -37,4 +37,4 @@ for(let i=num;i>0;i=parseInt(num)){
         //console.log(i);
     }
 
-    console.log(a);
+    console.log(a.toString().replace(/,/g," "));

@@ -1,4 +1,4 @@
-is =require("./isem.js");
+let is =require("./isem.js");
 
 let num1 = 0;
 let num2 = 1;
