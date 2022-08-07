@@ -1,3 +1,5 @@
+//10. Write a program to find the sum of digits of a given number.
+
 let num = prompt();
 
 if(num>0&&(!isempty(num))){
