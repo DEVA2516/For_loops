@@ -6,13 +6,15 @@ let num = 5;
 let str = '';
 
 for (let i = 1; i <= num; i++) {
-    let k = 1;
+    let k = 0;
     for (let j = 1; j <= 2 * i - 1; j++) {
-        if (j<i) {
-            str += k++ + ' ';
+        if (j < i) {
+            str += 2 ** k++ + ' ';
         }
+
+
         else
-            str += k-- + ' ';
+            str += 2 ** k-- + ' ';
     }
     console.log(str);
     str = '';
