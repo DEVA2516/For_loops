@@ -1,6 +1,12 @@
-// 47. Write a program to display such a pattern for n number of rows using
-// number.Each row will contain odd numbers of number.The first and last number
-// of each row will be 1 and middle column will be the row number.
+/* 49. Write a program to print a pyramid of digits as shown below for n number of
+lines.
+        1
+      2 3 2
+    3 4 5 4 3
+  4 5 6 7 6 5 4
+5 6 7 8 9 8 7 6 5 
+
+*/
 
 let num = 5;
 let str = ' ';
