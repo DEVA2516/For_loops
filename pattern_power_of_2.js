@@ -8,11 +8,8 @@ let str = '';
 for (let i = 1; i <= num; i++) {
     let k = 0;
     for (let j = 1; j <= 2 * i - 1; j++) {
-        if (j < i) {
+        if (j < i) 
             str += 2 ** k++ + ' ';
-        }
-
-
         else
             str += 2 ** k-- + ' ';
     }
