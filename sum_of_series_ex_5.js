@@ -1,4 +1,4 @@
-// 14. Write a program to find the sum of series 1 - X^2/2! + X^4/4!-.... upto nth term.
+
 
 let num = prompt("", 5);
 
