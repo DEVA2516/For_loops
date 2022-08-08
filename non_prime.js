@@ -1,17 +1,19 @@
+// 16. Write a program to list non-prime numbers from 1 to an upperbound.
+
 let min = 1;
-let max = prompt("enter upperlimit",25);
+let max = prompt("enter upperlimit", 25);
 let str = '';
 
-if((min>0)&&(min<max)&&(!isempty(min))&&(!isempty(max))){
-    for(let num=min;num<=max;num++){
-        if(num>=2){
+if ((min > 0) && (min < max) && (!isempty(min)) && (!isempty(max))) {
+    for (let num = min; num <= max; num++) {
+        if (num >= 2) {
             let flag = 1;
-            for(j=2;j<num;j++){
-                if(num%j==0){
+            for (j = 2; j < num; j++) {
+                if (num % j == 0) {
                     str += num + ' ';
                     break;
                 }
-           }
+            }
         }
     }
     console.log(str);
@@ -19,6 +21,6 @@ if((min>0)&&(min<max)&&(!isempty(min))&&(!isempty(max))){
 else
     console.log("Invlid range........check.....min.....max");
 
-function isempty(value){
-    return (value == null||value === undefined||value=='')?true:false;
+function isempty(value) {
+    return (value == null || value === undefined || value == '') ? true : false;
 }
