@@ -7,7 +7,7 @@ let j = 0;
 let count = 0;
 
 for (let num = 2; num <= number; num++) {
-    for (let i = 2; i < num; i++) {
+    for (let i = 2; i <= Math.sqrt(num); i++) {
         if (num % i == 0) {
             flag = 0;
             break;
@@ -21,18 +21,18 @@ for (let num = 2; num <= number; num++) {
 console.log("num = " + temp);
 
 for (let i = 0; i < temp.length; i++) {
-    for (let j = i; j < temp.length; j++) {
-        if (temp[i] != temp[j]) {
+    for (let j = i+1; j < temp.length; j++) {
+       // if (temp[i] != temp[j]) {
             let sum = temp[i] + temp[j]
             if (sum == number) {
                 console.log(number + " = " + temp[i] + "+" + temp[j]);
                 count = 1;
             }
-        }
+       // }
     }
 }
 if (count == 0) {
-    console.log(number + " is Not a Sum Of Two Prime Numberes...");
+    console.log(number + " is Not a Sum Of Two Prime Numbers...");
 }
 else
-    console.log(number + " is a sum of two prime number.......");
+    console.log(number + " is a sum of two prime numbers.......");
