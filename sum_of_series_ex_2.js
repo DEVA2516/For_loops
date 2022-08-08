@@ -1,6 +1,7 @@
-// 11. Write a program to find the sum of the series 1 + 1/2^2 + 1/3^3 + ..+ 1/n^n.
+//  12. Write a program to calculate the sum of the series (1*1) + (2*2) + (3*3) +
+// (4*4) + (5*5) + ... + (n*n).
 
-let num = prompt();
+let num = prompt("",5);
 
 if (!isempty(num)) {
     let sum = 0;
