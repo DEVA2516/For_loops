@@ -2,7 +2,7 @@
 // maximum, minimum, and average or terminate the process with -1.
 
 
-let is = require("./isem.js");
+// let is = require("./isem.js");
 
 let arr_size = prompt("array_size:",);
 let a = [];
@@ -15,7 +15,7 @@ for (let ip = 0; ip < arr_size; ip++) {
 
 
 
-if (!is.isempty(a)) {
+if (!isempty(a)) {
 
     let min = a[0], max = a[0];
     let avg = 0, sum = 0, count = 0;
@@ -46,3 +46,7 @@ if (!is.isempty(a)) {
 }
 else
     console.log("array is empty........");
+
+function isempty(value){
+    return (value.length < 0)? ture : false;
+}
