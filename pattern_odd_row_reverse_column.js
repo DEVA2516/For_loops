@@ -7,18 +7,18 @@ let str = '';
 
 for (let i = num; i > 0; i--) {
 
-    let k = 1;
+    let k = 0;
 
     for (l = num - i; l >= 0; l--) {
         str += ' ';
     }
     for (let j = 1; j <= 2 * i - 1; j++) {
-        if (j < i) {
-            str += k++ + ' ';
+        if (j <= i) {
+            str += ++k + ' ';
         }
         else
-            str += k-- + ' ';
+            str += --k + ' ';
     }
     console.log(str);
-    str = '';
+    str = ' ';
 }
