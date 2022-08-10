@@ -76,12 +76,12 @@ for (let i = 0; i < students_record.length; i++) {
     amount *= 1.2;
 }
 
-/*---------- amount display ----------------------------------------------------
+/* // ---------- amount display ----------------------------------------------------
     for (let i = 0; i < students_record.length;i++)
     console.log(students_record[i]['amount']);
 
 
----------- found name in students_record ---------------------------------------
+// ---------- found name in students_record ---------------------------------------
 let found = false;
 let check_name = "YC";
 let nameprint;
@@ -108,7 +108,7 @@ for(i = 0; i < students_record.length; i++){
 }
 
 
-----------found skills in student_record---------------------------------------------
+// ----------found skills in student_record---------------------------------------------
 
 let found = false;
 let check_name = "Surya";
@@ -123,7 +123,7 @@ for (let i = 0; i < students_record.length; i++) {
 }
     console.log((found == false)? "Name not found":" ");
 
----------change address in student record------------------------------------------------
+// ---------change address in student record------------------------------------------------
 
 let found = false;
 let check_name = "Stalin";
@@ -139,7 +139,7 @@ for (let i = 0; i < students_record.length; i++) {
 }
     console.log((found == false)? "Name not found": address);
 
-----------total_marks in student_record---------------------------------------------------
+// ----------total_marks in student_record---------------------------------------------------
 
 let found = false;
 let check_name = "YC";
@@ -156,7 +156,7 @@ for (let i = 0; i < students_record.length; i++) {
     console.log((found == false)? "Name not found":total_marks);
 
 
------------- found largest salary in student_record ---------------------------
+// ------------ found largest salary in student_record ---------------------------
 
 let max = students_record[0].amount;
 
@@ -167,14 +167,14 @@ for (let i=0;i<students_record.length;i++){
 }
 console.log(max);
 
--------------add one object in student_record--------------------------------------
+// -------------add one object in student_record--------------------------------------
 
 students_record.push({
     'name': 'suriyabalaji', 'Dob': '12-02-1997', 'id': 11, 'skills': { 'language': 'c', 'Fr_end': 'html', 'b_end': 'next js' },
     'mark':{'web_programming': 70,'database': 79}, 'address' : { 'door no ': '3-117', 'street': 'xyz-150', 'city':'chennai', 'pin-code': 610001}
 })
 
--------------found skill(html) of students in student_record---------------------------------------
+// -------------found skill(html) of students in student_record---------------------------------------
 
 let found = false;
 
@@ -186,7 +186,7 @@ for (let i = 0; i < students_record.length; i++ ){
 }
     console.log((found == false )? "not found" : " ");
 
----------list of student and amount -------------------------------
+// ---------list of student and amount -------------------------------
 
     for (let i = 0; i < students_record.length; i++){
         console.log(students_record[i].name,"=",students_record[i].amount);
@@ -194,4 +194,39 @@ for (let i = 0; i < students_record.length; i++ ){
 
 */
 
+// let a = '1234';
+// let b = '12';
+// console.log(a + b);
+// console.log(+a + +b);
 
+let sum = [];
+let total_marks = 0;
+
+for (let i = 0; i < students_record.length; i++) {
+    
+    if (students_record[i].id == 3) {
+        
+        sum = Object.keys(students_record[i].mark);
+        console.log(sum);
+        
+        for (let j = 0; j < sum.length; j++) 
+            
+            total_marks += students_record[i].mark[sum[j]];
+            
+        break;
+        }
+
+        // total_marks += students_record[3].
+    }
+
+
+// let total_marks = 0;
+// for (let value of Object.values(students_record[2].mark)) {
+//     total_marks += value;
+// }
+
+console.log(total_marks);
+
+
+
+console.log (students_record[0].mark.web_programming);
