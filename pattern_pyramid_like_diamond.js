@@ -2,12 +2,12 @@ let num = 50;
 let str ='';
 let l = num * 2;
 
-for(let i=1;i<=num;i++){
+for(let i=1;i<=num && i > 0;i++){
 
     for(let j= num-i;j>=0;j--)
         str += ' ';
 
-    for(let k=1;k<=2*i-1;k++){
+    for(let k=1;k<=2*i-1 && k > 0;k++){
         str += '*' + "";
         //console.log(k);
     }
